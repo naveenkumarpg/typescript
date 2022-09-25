@@ -1,0 +1,35 @@
+npx tsc --init     // To create tsconfig.js
+npx create-react-app appname --template typescript
+
+
+type
+union
+intersection
+
+
+
+string
+number
+boolean
+{}[]
+() => void
+
+React.ReactNode
+React.MouseEvent
+React.MouseEvent<HTMLButtonElement>
+React.CSSProperties;
+
+type InputProps = {
+  value: string;
+  handleOnChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+
+
+useState 
+const [isLogin, setIsLogin] = useState(false);
+const [isLogin, setIsLogin] = useState<null | {}>(null);
+const [isLogin, setIsLogin] = useState<null | isLoginProps>(null);
+
+
+
