@@ -26,10 +26,13 @@ type InputProps = {
 
 
 
-useState 
-const [isLogin, setIsLogin] = useState(false);
-const [isLogin, setIsLogin] = useState<null | {}>(null);
-const [isLogin, setIsLogin] = useState<null | isLoginProps>(null);
+useState
+  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState<null | {}>(null);
+  const [isLogin, setIsLogin] = useState<null | isLoginProps>(null);
+
+useReducer
+  const [state, dispatch] = useReducer(reducer, initialState);
 
 
 
