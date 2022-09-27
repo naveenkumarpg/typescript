@@ -33,6 +33,7 @@ useState
 
 useReducer
   const [state, dispatch] = useReducer(reducer, initialState);
+  <button onClick={() => dispatch({ type: 'decrement', payload: 10 })}>
 
 
 
